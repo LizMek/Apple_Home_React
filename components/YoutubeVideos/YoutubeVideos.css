@@ -1,0 +1,70 @@
+.YoutubeVideosWrapper {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.allVideosWrapper {
+  margin-bottom: 20px;
+}
+
+.title-wrapper h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.videosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.Thumbnail img:hover {
+  transform: scale(1.05);
+}
+
+.VideoDetails {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.VideoDetails h5 {
+  font-size: 1.25rem;
+  color: #0073e6;
+  margin-bottom: 5px;
+}
+
+.VideoDetails h5 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.VideoDetails h5 a:hover {
+  color: #005bb5;
+}
+
+.VideoDetails p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .videosContainer > div {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .videosContainer > div {
+    width: 30%;
+  }
+}
